@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    
+}
+nav{
+    background-color: rgb(135, 29, 71);
+    margin: 0;
+    height: 40px;
+}
+h1{
+    font-size: 30px;
+    margin-top: 0;
+    padding: 0;
+    font-family: 'Bruno Ace SC', cursive;
+}
+li{
+    display:inline-block;
+}
+#about{
+    padding: 20px;
+    margin-left: 1500px;
+
+}
+.gameContainer{
+    display:flex ;
+    margin: auto;
+    justify-content: center;
+    margin-top: 60px;
+}
+body{
+    background-image: url('/TicTacToe/images/8351227.gif');
+    background-repeat: no-repeat;
+   
+    
+}
+.container{
+    position: relative;
+    display: grid;
+    grid-template-rows:repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Righteous', cursive;
+    
+    
+}
+.box{
+    border: 2px solid rgb(135, 29, 71);
+    font-size: 8vw;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #c364e6;
+}
+.box:hover{
+    background-color: rgb(220, 108, 153);
+}
+.info{
+    font-family: 'Righteous', cursive;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+    display: none;
+}
+.bt-0{
+    border-top:0 ;
+}
+.bb-0{
+    border-bottom:0 ;
+}
+.bl-0{
+    border-left:0 ;
+}
+.br-0{
+    border-right:0 ;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Righteous', cursive;
+    color: rgb(163, 92, 230);
+}
+#reset{
+   display: flex;
+   margin: auto;
+   margin-top: 5vw;
+   font-family: Georgia;
+  color: #ffffff;
+  background-color: #c364e6;
+  font-size: 27px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 6px;
+}
+#reset:hover{
+    background-color: rgb(220, 108, 153);
+}
+.line{
+    background-color: rgb(245, 240, 240);
+    height: 10px;
+    width: 0;
+    position:absolute;
+    transition: width 1s ease-in-out;
+    
+}
+
+@media screen and (max-width:800px){
+   .gameContainer{
+    flex-wrap: wrap;
+   } 
+   .info{
+    margin-top: 34px;
+   }
+   .container{
+    display: grid;
+    grid-template-rows: repeat(3,20vw);
+    grid-template-columns:repeat(3,20vw) ;
+   }
+   .line{
+    height: 0;
+    width: 0;
+   }
+}
